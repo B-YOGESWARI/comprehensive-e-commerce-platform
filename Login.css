@@ -1,0 +1,60 @@
+<style>
+        /* CSS styles */
+        .form-row {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div id="loginContainer">
+        <h1>Login</h1>
+        <div id="loginForm">
+            <div class="form-row">
+                <label for="userId">User ID:</label>
+                <input type="text" id="userId" placeholder="User ID">
+            </div>
+            <div class="form-row">
+                <label for="password">Password:</label>
+                <input type="password" id="password" placeholder="Password">
+            </div>
+            <div class="form-row">
+                <button onclick="login()">Login</button>
+                <button type="reset">Reset</button>
+            </div>
+            <div id="loginMessage"></div>
+<div class="form-row">
+                <a href="#" onclick="showNewUserForm()">New User?</a>
+                <a href="#" onclick="showForgotPasswordForm()">Forgot Password?</a>
+            </div>
+   <div id="newUserForm" style="display: none;">
+            <h2>New User Registration</h2>
+            <div class="form-row">
+                <label for="newUserId">New User ID:</label>
+                <input type="text" id="newUserId" placeholder="New User ID">
+            </div>
+            <div class="form-row">
+                <label for="newPassword">New Password:</label>
+                <input type="password" id="newPassword" placeholder="New Password">
+            </div>
+            <div class="form-row">
+                <button onclick="register()">Register</button>
+                <button type="reset">Reset</button>
+            </div>
+            <div id="registrationMessage"></div>
+        </div>
+
+        <div id="forgotPasswordForm" style="display: none;">
+            <h2>Forgot Password</h2>
+            <div class="form-row">
+                <label for="forgotUserId">User ID:</label>
+                <input type="text" id="forgotUserId" placeholder="User ID">
+            </div>
+ <div class="form-row">
+                <button onclick="resetPassword()">Reset Password</button>
+                <button type="reset">Reset</button>
+            </div>
+            <div id="resetPasswordMessage"></div>
+        </div>
+    </div>
+
+
