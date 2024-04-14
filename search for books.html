@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Bookstore</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        .add-to-cart-button {
+            background-color: #4CAF50; /* Green */
+            border: none;
+            color: white;
+            padding: 8px 16px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 14px;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+        .search-container {
+            margin-bottom: 10px;
+        }
+        nav ul {
+ list-style-type: none;
+            padding: 0;
+            margin: 0;
+            background-color: #f2f2f2;
+            overflow: hidden;
+        }
+        nav li {
+            float: left;
+        }
+        nav li a {
+            display: block;
+            color: #333;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+        nav li a:hover {
+            background-color: #ddd;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Books</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+<h1>Online Bookstore</h1>
+    <div class="search-container">
+        <input type="text" id="searchInput" onkeyup="searchBooks()" placeholder="Search for book titles...">
+    </div>
+    <table id="booksTable">
+        <thead>
+            <tr>
+                <th>Book Title</th>
+                <th>Author</th>
+                <th>Quantity Available</th>
+                <th>Price</th>
+                <th>Add to Cart</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Book 1</td>
+                <td>Author 1</td>
+                <td>10</td>
+                <td>$10.99</td>
+                <td><button class="add-to-cart-button">Add</button></td>
+            </tr>
+            <tr>
+                <td>Book 2</td>
+                <td>Author 2</td>
+                <td>8</td>
+                <td>$12.99</td>
+<td><button class="add-to-cart-button">Add</button></td>
+            </tr>
+            <tr>
+                <td>Book 3</td>
+                <td>Author 3</td>
+                <td>5</td>
+                <td>$8.99</td>
+                <td><button class="add-to-cart-button">Add</button></td>
+            </tr>
+            <tr>
+                <td>Book 4</td>
+                <td>Author 4</td>
+                <td>12</td>
+                <td>$14.99</td>
+                <td><button class="add-to-cart-button">Add</button></td>
+            </tr>
+            <tr>
+                <td>Book 5</td>
+                <td>Author 5</td>
+                <td>7</td>
+                <td>$9.99</td>
+                <td><button class="add-to-cart-button">Add</button></td>
+            </tr>
+        </tbody>
+    </table>
